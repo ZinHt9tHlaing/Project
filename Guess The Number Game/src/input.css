@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500;700&family=Roboto+Mono:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
+}
+
+.main-bg {
+  width: 100%;
+  height: 100vh;
+  background: #c2e59c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #64b3f4,
+    #c2e59c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #64b3f4,
+    #c2e59c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.border-bg{
+  width: 60%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.num-border{
+  width: 75%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  @apply text-center mx-auto rounded-lg
+}
+
+.wrong{
+  border: 3px solid red;
+}
+
+.true{
+  border: 3px solid green;
+}
